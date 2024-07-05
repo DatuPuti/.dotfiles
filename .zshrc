@@ -114,6 +114,7 @@ source $ZSH/oh-my-zsh.sh
 #
 export PATH=$PATH:/opt/nvim-linux64/bin:/home/linuxbrew/.linuxbrew/bin:/home/tborland/.local/bin
 export PATH=$PATH:/home/tborland/bin:/home/tborland/bin
+export PATH=$PATH:/home/tborland/bin/gitCmd
 
 eval "$(zoxide init bash)"
 eval "$(thefuck --alias fuck)"
