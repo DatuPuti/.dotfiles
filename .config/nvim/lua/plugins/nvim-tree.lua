@@ -5,7 +5,6 @@ return {
             filters = {
                 dotfiles = true,
             },
-            lazy = false
         })
 		vim.keymap.set("n", "<C-n>", ":NvimTreeToggle filesystem toggle left<CR>", {})
     end,
