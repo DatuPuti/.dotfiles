@@ -132,6 +132,7 @@ alias cat="batcat"
 alias cd="z"
 alias zz="z "
 alias grep="rg"
+alias clr="clear"
 
 
 source $(dirname $(gem which colorls))/tab_complete.sh
