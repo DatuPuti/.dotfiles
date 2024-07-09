@@ -119,6 +119,7 @@ export PATH=$PATH:/home/tborland/bin/gitCmd
 eval "$(zoxide init bash)"
 eval "$(thefuck --alias fuck)"
 
+alias vi="nvim"
 alias vim="nvim"
 alias python=python3
 alias ls="colorls"
@@ -132,7 +133,7 @@ alias cat="batcat"
 alias cd="z"
 alias zz="z "
 alias grep="rg"
-alias clr="clear"
+alias cls="clear"
 
 
 source $(dirname $(gem which colorls))/tab_complete.sh
