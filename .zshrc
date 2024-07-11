@@ -117,7 +117,7 @@ export PATH=$PATH:/home/tborland/bin:/home/tborland/bin
 export PATH=$PATH:/home/tborland/bin/gitCmd
 
 eval "$(zoxide init bash)"
-eval "$(thefuck --alias fuck)"
+eval "$(thefuck --alias fck)"
 
 alias vi="nvim"
 alias vim="nvim"
