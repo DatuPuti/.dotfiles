@@ -117,3 +117,6 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:/opt/nvim-linux64/bin
+export PATH="$PATH:$HOME/.rbenv/bin
+eval "$(rbenv init -)"
+export PATH="$PATH:$HOME/.linuxbrew/bin"

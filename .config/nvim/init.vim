@@ -21,6 +21,7 @@ Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 set encoding=UTF-8
 
@@ -35,7 +36,7 @@ nmap <F8> :TagbarToggle<CR>
 
 :set completeopt-=preview " For No Previews
 
-:colorscheme jellybeans
+:colorscheme catppuccin
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
