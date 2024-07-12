@@ -121,7 +121,7 @@ eval "$(thefuck --alias fck)"
 
 alias vi="nvim"
 alias vim="nvim"
-alias python=python3
+alias python="python3"
 alias ls="colorls"
 alias ll="colorls -alh"
 alias la="colorls -A"
@@ -135,8 +135,10 @@ alias zz="z "
 alias grep="rg"
 alias cls="clear"
 
-
-source $(dirname $(gem which colorls))/tab_complete.sh
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(dirname $(gem which colorls))/tab_complete.sh
+source ~/.p10k.zsh
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+eval "$(rbenv init -)"
+export PATH=$PATH:$HOME/.rbenv/bin
+export PATH=$PATH:$HOME/.linuxbrew/bin
