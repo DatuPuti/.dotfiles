@@ -112,9 +112,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
-export PATH=$PATH:/opt/nvim-linux64/bin:/home/linuxbrew/.linuxbrew/bin:/home/tborland/.local/bin
-export PATH=$PATH:/home/tborland/bin:/home/tborland/bin
-export PATH=$PATH:/home/tborland/bin/gitCmd
+# export PATH=$PATH:/opt/nvim-linux64/bin:/home/linuxbrew/.linuxbrew/bin
+export PATH=$PATH:/home/tborland/bin:/home/tborland/bin:/home/tborland/.local/bin
+export PATH=$PATH:/home/tborland/bin/gitCmd:/snap/bin
 
 eval "$(zoxide init bash)"
 eval "$(thefuck --alias fck)"
@@ -139,6 +139,6 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(dirname $(gem which colorls))/tab_complete.sh
 source ~/.p10k.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-eval "$(rbenv init -)"
-export PATH=$PATH:$HOME/.rbenv/bin
-export PATH=$PATH:$HOME/.linuxbrew/bin
+#eval "$(rbenv init -)"
+#export PATH=$PATH:$HOME/.rbenv/bin
+#export PATH=$PATH:$HOME/.linuxbrew/bin
