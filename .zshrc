@@ -113,8 +113,7 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 # export PATH=$PATH:/opt/nvim-linux64/bin:/home/linuxbrew/.linuxbrew/bin
-export PATH=$PATH:/home/tborland/bin:/home/tborland/bin:/home/tborland/.local/bin
-export PATH=$PATH:/home/tborland/bin/gitCmd:/snap/bin
+export PATH=$PATH:$HOME/bin/gitCmd:/snap/bin:$HOME/.local/bin
 
 eval "$(zoxide init bash)"
 eval "$(thefuck --alias fck)"
@@ -129,7 +128,7 @@ alias ld="colorls -d"
 alias lf="colorls -f"
 alias lr="colorls -r"
 alias tree="colorls --tree"
-alias cat="batcat"
+alias cat="bat"
 alias cd="z"
 alias zz="z "
 alias grep="rg"
@@ -138,7 +137,3 @@ alias cls="clear"
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(dirname $(gem which colorls))/tab_complete.sh
 source ~/.p10k.zsh
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#eval "$(rbenv init -)"
-#export PATH=$PATH:$HOME/.rbenv/bin
-#export PATH=$PATH:$HOME/.linuxbrew/bin
