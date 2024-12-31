@@ -113,7 +113,7 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 # export PATH=$PATH:/opt/nvim-linux64/bin:/home/linuxbrew/.linuxbrew/bin
-export PATH=$PATH:$HOME/bin/gitCmd:/snap/bin:$HOME/.local/bin
+export PATH=$PATH:$HOME/bin:$HOME/bin/gitCmd:/snap/bin:$HOME/.local/bin
 
 eval "$(zoxide init bash)"
 eval "$(thefuck --alias fck)"
