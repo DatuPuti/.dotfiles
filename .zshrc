@@ -1,3 +1,6 @@
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -112,8 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
-# export PATH=$PATH:/opt/nvim-linux64/bin:/home/linuxbrew/.linuxbrew/bin
-export PATH=$PATH:$HOME/bin/gitCmd:/snap/bin:$HOME/.local/bin
+export PATH=$PATH:$HOME/bin:$HOME/bin/gitCmd:/snap/bin:$HOME/.local/bin:/opt/nvim-linux64/bin:/home/linuxbrew/.linuxbrew/bin
 
 eval "$(zoxide init bash)"
 eval "$(thefuck --alias fck)"
@@ -137,3 +139,9 @@ alias cls="clear"
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(dirname $(gem which colorls))/tab_complete.sh
 source ~/.p10k.zsh
+#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach-session -t default || tmux new-session -s default
+fi
+
