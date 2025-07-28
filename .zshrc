@@ -115,7 +115,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
-export PATH=$PATH:$HOME/bin:$HOME/bin/gitCmd:/snap/bin:$HOME/.local/bin:/opt/nvim-linux64/bin:/home/linuxbrew/.linuxbrew/bin
+export FUNCNEST=100
+#export PATH=$PATH:$HOME/bin:$HOME/bin/gitCmd:/snap/bin:$HOME/.local/bin:/opt/nvim-linux-arm64/bin:/home/linuxbrew/.linuxbrew/bin
+export PATH=$PATH:$HOME/bin:$HOME/bin/gitCmd:/snap/bin:$HOME/.local/bin:/opt/nvim-linux-arm64/bin:/opt/nodejs/bin
 
 eval "$(zoxide init bash)"
 eval "$(thefuck --alias fck)"
@@ -141,7 +143,7 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 source ~/.p10k.zsh
 #eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-  tmux attach-session -t default || tmux new-session -s default
-fi
-
+#if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+#    tmux attach-session -t default || tmux new-session -s default
+#fi
+cd $HOME
