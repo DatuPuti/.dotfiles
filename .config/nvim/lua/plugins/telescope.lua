@@ -12,6 +12,9 @@ return {
           ["ui-select"] = {
             require("telescope.themes").get_dropdown({}),
           },
+          projects = {
+            display_type = "full",
+          }
         },
       })
       local builtin = require("telescope.builtin")
@@ -19,8 +22,11 @@ return {
       vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
       vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
       vim.keymap.set("n", "<leader><leader>", builtin.oldfiles, {})
+      vim.keymap.set("n", "<leader>fp", require("telescope").extensions.projects.projects, {})
+
 
       require("telescope").load_extension("ui-select")
+      require("telescope").load_extension("projects")
     end,
   },
 }
